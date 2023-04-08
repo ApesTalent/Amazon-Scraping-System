@@ -1,0 +1,14 @@
+.idea/
+request.txt
+*.log
+.env
+nohup.out
+*.html
+*.http
+prime
+prime?
+*.txt
+mongo-volume
+primeprice.com
+primeprice.com.exe
+text.log

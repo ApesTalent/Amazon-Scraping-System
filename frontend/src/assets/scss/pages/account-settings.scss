@@ -1,0 +1,97 @@
+/*** Account Settings ***/
+
+.account-settings-tab {
+  box-shadow: none;
+  .nav-item {
+    .nav-link.active {
+      background-color: transparent !important;
+      transform: translateY(0) !important;
+      &:after {
+        left: auto !important;
+        top: 1.2rem !important;
+        right: -1.5rem !important;
+      }
+    }
+  }
+}
+
+.account-setting-wrapper{
+  .account-settings-tab{
+    .nav-item{
+      .nav-link{
+        &.active{
+          &:after{
+            top: 100% !important;
+            left: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.proxy-list-block {
+  margin-top: 20px;
+  min-height: 35vh;
+  .proxy-item {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 4px 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    &:hover {
+      background-color: #f1f1ff;
+    }
+
+    div {
+      min-width: 70px;
+    }
+    a {
+      margin-left: auto;
+    }
+
+  }
+}
+
+.proxy-add-block {
+  display: flex;
+  button {
+    width: 180px;
+    height: 37px;
+  }
+  input {
+    max-width: 400px;
+    margin-right: 50px;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .account-settings-tab {
+    .nav-item {
+      .nav-link.active {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+  .proxy-list-block {
+    .proxy-item {
+      font-size: 1rem;
+      div {
+        min-width: 30px;
+      }
+    }
+  }
+  
+  .proxy-add-block {
+    flex-direction: column;
+    input {
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+  
+  }
+}

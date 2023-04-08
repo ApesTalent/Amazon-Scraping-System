@@ -1,0 +1,8 @@
+{
+  "ServerConfigurations": {
+    "Port": ":8000",
+    "InstanceName": "prime"
+  },
+  "DBURI": "mongodb://localhost:27017",
+  "DBNAME": "primedb"
+}
